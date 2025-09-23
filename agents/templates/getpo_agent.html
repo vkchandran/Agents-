@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PO Lookup Agent</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+        form { margin-bottom: 20px; }
+        input[type="text"] { padding: 8px; width: 200px; }
+        button { padding: 8px 15px; }
+        .result { background-color: #f4f4f4; border: 1px solid #ddd; padding: 15px; white-space: pre-wrap; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Purchase Order Lookup Assistant 🔎</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="po_number">Enter PO Number:</label>
+        <input type="text" id="po_number" name="po_number" value="{{ submitted_po|default:'' }}" required>
+        <button type="submit">Fetch Details</button>
+    </form>
+
+    {% if result %}
+        <h2>Results for PO: {{ submitted_po }}</h2>
+        <div class="result">
+            {% if result.status == 'success' %}
+                <p><strong>Status:</strong> ✅ Success</p>
+                <p><strong>PO Header Data:</strong></p>
+                <pre>{{ result.po_header | pprint }}</pre>
+            {% else %}
+                <p class="error"><strong>Status:</strong> ❌ Error</p>
+                <p><strong>Message:</strong> {{ result.message }}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+
+</body>
+</html>

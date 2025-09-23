@@ -1,0 +1,9 @@
+INFO 2025-09-23 17:32:01,227 autoreload 832148 139672900958016 Watching for file changes with StatReloader
+INFO 2025-09-23 17:49:48,629 autoreload 832286 139727974299456 Watching for file changes with StatReloader
+INFO 2025-09-23 17:49:48,751 __init__ 832286 139727974299456 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-23 17:50:16,867 autoreload 832315 140462597748544 Watching for file changes with StatReloader
+INFO 2025-09-23 17:50:16,986 __init__ 832315 140462597748544 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-23 18:02:31,775 autoreload 833334 140353041282880 Watching for file changes with StatReloader
+INFO 2025-09-23 18:02:31,893 __init__ 833334 140353041282880 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-23 18:05:54,800 autoreload 833353 139878329800512 Watching for file changes with StatReloader
+INFO 2025-09-23 18:05:54,922 __init__ 833353 139878329800512 Default Auth client Circuit breaker strategy enabled
