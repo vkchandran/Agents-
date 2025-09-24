@@ -95,3 +95,4 @@ uvicorn==0.35.0
 wrapt==1.17.0
 yarl==1.20.0
 zstandard==0.23.0
+gunicorn

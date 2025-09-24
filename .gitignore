@@ -1,0 +1,12 @@
+# .gitignore
+
+# Environment variables
+.env
+
+# Database
+db.sqlite3
+
+# Other common Django ignores
+__pycache__/
+*.pyc
+/staticfiles/

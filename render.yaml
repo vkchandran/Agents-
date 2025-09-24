@@ -1,0 +1,28 @@
+# render.yaml
+
+services:
+  # A PostgreSQL database
+  - type: psql
+    name: django-postgres-db
+    plan: free # Can be changed to a paid plan
+
+  # The Django web service
+  - type: web
+    name: agents # Change this to your app's name
+    runtime: python
+    plan: free # Can be changed to a paid plan
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: "gunicorn OCI_Agents_App.wsgi" # IMPORTANT: Replace OCI_Agents_App with your project name
+    envVars:
+      - key: DATABASE_URL
+        fromService:
+          type: psql
+          name: django-postgres-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true # Render will generate a random secret key
+      - key: PYTHON_VERSION
+        value: 3.11.4 # Match your Python version

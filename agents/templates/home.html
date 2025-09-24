@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Management Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <h1>AstuteAP</h1>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#dashboard" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="#agents" class="nav-link">All Agents</a>
+            </li>
+         
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="header">
+            <h2>Agent Management Dashboard</h2>
+            <!-- <div class="header-actions">
+                <button class="btn btn-secondary">Export Data</button>
+                <button class="btn btn-primary">Add New Agent</button>
+            </div> -->
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-title">Total Agents</div>
+                <div class="stat-value">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Active Agents</div>
+                <div class="stat-value">0</div>
+            </div>
+           
+        </div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label for="search">Search:</label>
+                <input type="text" id="search" class="filter-input" placeholder="Search agents...">
+            </div>
+            <div class="filter-group">
+                <label for="status">Type:</label>
+                <select id="status" class="filter-select">
+                    <option value="">All Types</option>
+                    <option value="reactive">Reactive</option>
+                    <option value="proactive">Proactive</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="specialty">Category:</label>
+                <select id="specialty" class="filter-select">
+                    <option value="">All categories</option>
+                    
+                </select>
+            </div>
+            <button class="btn btn-secondary">Reset Filters</button>
+        </div>
+
+        <div class="agents-table-container">
+            <div class="table-header">
+                <h3 class="table-title">Agents</h3>
+           
+            </div>
+            
+            <table class="agents-table">
+                <thead>
+                    <tr>
+                        <th>Agent</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="agent-info">
+                                <div class="agent-avatar">PO</div>
+                                <div class="agent-details">
+                                    <h4><a href="" style="text-decoration: none;">GetPODetails</a></h4>
+                                    <p>ID: AG001</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Reactive</td>
+                        <td>Payables</td>
+                       <td><span class="status-badge status-active">Active</span></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            
+            <!-- <div class="pagination">
+                <div class="pagination-info">
+                    Showing 1-6 of 47 agents
+                </div>
+                <div class="pagination-controls">
+                    <button class="btn btn-secondary btn-small">Previous</button>
+                    <button class="btn btn-secondary btn-small">1</button>
+                    <button class="btn btn-primary btn-small">2</button>
+                    <button class="btn btn-secondary btn-small">3</button>
+                    <button class="btn btn-secondary btn-small">Next</button>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <script>
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('.agents-table tbody tr');
+            
+            rows.forEach(row => {
+                const agentName = row.querySelector('.agent-details h4').textContent.toLowerCase();
+                const specialty = row.cells[1].textContent.toLowerCase();
+                
+                if (agentName.includes(searchTerm) || specialty.includes(searchTerm)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = searchTerm === '' ? '' : 'none';
+                }
+            });
+        });
+
+        // Status filter
+        document.getElementById('status').addEventListener('change', function(e) {
+            const statusFilter = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('.agents-table tbody tr');
+            
+            rows.forEach(row => {
+                const status = row.querySelector('.status-badge').textContent.toLowerCase();
+                
+                if (statusFilter === '' || status.includes(statusFilter)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Specialty filter
+        document.getElementById('specialty').addEventListener('change', function(e) {
+            const specialtyFilter = e.target.value.toLowerCase();
+            const rows = document.querySelectorAll('.agents-table tbody tr');
+            
+            rows.forEach(row => {
+                const specialty = row.cells[1].textContent.toLowerCase();
+                
+                if (specialtyFilter === '' || specialty.includes(specialtyFilter.replace('-', ' '))) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // Reset filters
+        document.querySelector('.filters button').addEventListener('click', function() {
+            document.getElementById('search').value = '';
+            document.getElementById('status').value = '';
+            document.getElementById('specialty').value = '';
+            
+            const rows = document.querySelectorAll('.agents-table tbody tr');
+            rows.forEach(row => row.style.display = '');
+        });
+
+        // Navigation active state
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('.nav-link.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
