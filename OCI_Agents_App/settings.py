@@ -27,9 +27,6 @@ SECRET_KEY = 'django-insecure-m0^!b5m-#=jid*5@lm%)gq8t2fvd-zyajn#s@p%@+o3bu%b*+d
 DEBUG = True
 
 ALLOWED_HOSTS = ['*','test-server.appub.pccdnet.oraclevcn.com','132.226.74.116']
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 # Application definition
 
@@ -117,9 +114,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = 'static/'           # where media files are stored
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type

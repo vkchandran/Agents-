@@ -2,7 +2,7 @@
 
 from django.shortcuts import render
 from . import services # Import our new services file
-from django.views.generic import Templateview
+from django.views.generic import TemplateView
 
 
 class HomeView(TemplateView):

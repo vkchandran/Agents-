@@ -1,461 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PO Lookup Agent - Dashboard</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+{% extends 'home.html' %}
+{% block home %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/agents.css' %}">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8fafc;
-            color: #334155;
-            line-height: 1.6;
-        }
-
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100vh;
-            width: 250px;
-            background: #1e293b;
-            color: white;
-            padding: 2rem 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .logo-icon {
-            width: 0;
-            height: 0;
-            border-left: 12px solid transparent;
-            border-right: 12px solid transparent;
-            border-bottom: 20px solid #2DD4BF;
-            position: relative;
-        }
-
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            top: 6px;
-            left: -8px;
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 12px solid #64748b;
-        }
-
-        .logo h1 {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
-
-        .nav-menu {
-            list-style: none;
-        }
-
-        .nav-item {
-            margin: 0.5rem 0;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 0.75rem 1.5rem;
-            color: #cbd5e1;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border-left: 3px solid transparent;
-        }
-
-        .nav-link:hover {
-            background: rgba(45, 212, 191, 0.1);
-            color: #2DD4BF;
-            border-left-color: #2DD4BF;
-        }
-
-        .nav-link.active {
-            background: rgba(45, 212, 191, 0.1);
-            color: #2DD4BF;
-            border-left-color: #2DD4BF;
-        }
-
-        .main-content {
-            margin-left: 250px;
-            padding: 2rem;
-            min-height: 100vh;
-        }
-
-        .header {
-            background: white;
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #1e293b;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .breadcrumb {
-            font-size: 0.875rem;
-            color: #64748b;
-            margin-bottom: 0.5rem;
-        }
-
-        .breadcrumb a {
-            color: #2DD4BF;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .lookup-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .form-section {
-            margin-bottom: 2rem;
-        }
-
-        .form-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid #e2e8f0;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            max-width: 400px;
-        }
-
-        .form-label {
-            font-weight: 500;
-            color: #374151;
-            font-size: 0.875rem;
-        }
-
-        .form-input {
-            padding: 0.75rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-input:focus {
-            outline: none;
-            border-color: #2DD4BF;
-            box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.1);
-        }
-
-        .btn {
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
-        }
-
-        .btn-primary {
-            background: linear-gradient(45deg, #2DD4BF, #06B6D4);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
-        }
-
-        .btn-secondary {
-            background: #e2e8f0;
-            color: #475569;
-        }
-
-        .btn-secondary:hover {
-            background: #cbd5e1;
-        }
-
-        .result-container {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin-top: 2rem;
-        }
-
-        .result-header {
-            padding: 1.5rem 2rem;
-            border-bottom: 1px solid #e2e8f0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .result-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #1e293b;
-        }
-
-        .status-badge {
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        .status-success {
-            background: #dcfce7;
-            color: #166534;
-        }
-
-        .status-error {
-            background: #fef2f2;
-            color: #dc2626;
-        }
-
-        .result-content {
-            padding: 2rem;
-        }
-
-        .data-section {
-            margin-bottom: 2rem;
-        }
-
-        .data-title {
-            font-weight: 600;
-            color: #374151;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #f1f5f9;
-        }
-
-        .data-display {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 1.5rem;
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 0.875rem;
-            line-height: 1.6;
-            white-space: pre-wrap;
-            overflow-x: auto;
-        }
-
-        .error-message {
-            color: #dc2626;
-            background: #fef2f2;
-            border: 1px solid #fecaca;
-            border-radius: 8px;
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-
-        .info-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        .info-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        .info-card-title {
-            font-size: 0.75rem;
-            color: #64748b;
-            margin-bottom: 0.5rem;
-            text-transform: uppercase;
-            font-weight: 600;
-        }
-
-        .info-card-value {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: #1e293b;
-        }
-
-        .loading {
-            display: none;
-            text-align: center;
-            padding: 2rem;
-            color: #64748b;
-        }
-
-        .loading.show {
-            display: block;
-        }
-
-        @media (max-width: 1024px) {
-            .sidebar {
-                transform: translateX(-100%);
-                transition: transform 0.3s ease;
-            }
-            
-            .sidebar.show {
-                transform: translateX(0);
-            }
-            
-            .main-content {
-                margin-left: 0;
-            }
-            
-            .header {
-                flex-direction: column;
-                gap: 1rem;
-                align-items: flex-start;
-            }
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            background: #2DD4BF;
-            color: white;
-            border: none;
-            padding: 0.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        @media (max-width: 1024px) {
-            .mobile-menu-btn {
-                display: block;
-                position: fixed;
-                top: 1rem;
-                left: 1rem;
-                z-index: 1001;
-            }
-        }
-    </style>
-</head>
-<body>
-    <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
-    
-    <aside class="sidebar" id="sidebar">
-        <div class="logo">
-            <div class="logo-icon"></div>
-            <h1>AgentHub</h1>
-        </div>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#dashboard" class="nav-link">Dashboard</a>
-            </li>
-            <li class="nav-item">
-                <a href="#agents" class="nav-link">All Agents</a>
-            </li>
-            <li class="nav-item">
-                <a href="#po-lookup" class="nav-link active">PO Lookup Agent</a>
-            </li>
-            <li class="nav-item">
-                <a href="#analytics" class="nav-link">Analytics</a>
-            </li>
-            <li class="nav-item">
-                <a href="#reports" class="nav-link">Reports</a>
-            </li>
-            <li class="nav-item">
-                <a href="#settings" class="nav-link">Settings</a>
-            </li>
-        </ul>
-    </aside>
-
-    <main class="main-content">
-        <header class="header">
-            <div>
-                <div class="breadcrumb">
-                    <a href="#dashboard">Dashboard</a> / <a href="#agents">Agents</a> / PO Lookup Agent
-                </div>
-                <h2>🔎 Purchase Order Lookup Assistant</h2>
+    <main class="main-contents">
+        <!-- <header class="header">
+            <div class="breadcrumb">
+                <a href="#dashboard">Dashboard</a> / PO Lookup Agent
             </div>
-            <div class="header-actions">
-                <button class="btn btn-secondary">View History</button>
-                <button class="btn btn-secondary">Export Results</button>
-            </div>
-        </header>
-
-        <div class="info-cards">
-            <div class="info-card">
-                <div class="info-card-title">Today's Lookups</div>
-                <div class="info-card-value">47</div>
-            </div>
-            <div class="info-card">
-                <div class="info-card-title">Success Rate</div>
-                <div class="info-card-value">94%</div>
-            </div>
-            <div class="info-card">
-                <div class="info-card-title">Avg Response Time</div>
-                <div class="info-card-value">1.2s</div>
-            </div>
-            <div class="info-card">
-                <div class="info-card-title">Active Sessions</div>
-                <div class="info-card-value">8</div>
-            </div>
-        </div>
+            <h2>🔎 Purchase Order Lookup Assistant</h2>
+        </header> -->
 
         <div class="lookup-container">
             <div class="form-section">
-                <h3 class="form-title">Purchase Order Lookup</h3>
-                <form method="post" onsubmit="showLoading()" id="poForm">
-                    <!-- Note: In a real Django app, you'd include {% csrf_token %} here -->
+                <h3 class="form-title">Get PO Details</h3>
+                <form method="post" action="{% url 'getpo_agent' %}" id="poForm">
+                    {% csrf_token %}
                     <div class="form-group">
-                        <label for="po_number" class="form-label">Enter PO Number:</label>
+                        <!-- <label for="po_number" class="form-label">Enter PO Number:</label> -->
                         <input 
                             type="text" 
                             id="po_number" 
                             name="po_number" 
                             class="form-input"
-                            placeholder="e.g., PO-2025-001234"
+                            
+                            placeholder="Enter PO Number"
                             required
                         >
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary mt-2">
                         🔍 Fetch Details
                     </button>
                 </form>
@@ -466,140 +39,39 @@
             </div>
         </div>
 
-        <!-- Sample result display - this would be populated by Django template -->
-        <div class="result-container" id="resultContainer" style="display: none;">
+        {% if result %}
+        <div class="result-container">
             <div class="result-header">
-                <h3 class="result-title">Results for PO: <span id="poNumber">PO-2025-001234</span></h3>
-                <div class="status-badge status-success" id="statusBadge">
-                    ✅ Success
+                <h3 class="result-title">Results for PO: {{ submitted_po }}</h3>
+                <div class="status-badge {% if result.status == 'success' %}status-success{% else %}status-error{% endif %}">
+                    {% if result.status == 'success' %}
+                        ✅ Success
+                    {% else %}
+                        ❌ Error
+                    {% endif %}
                 </div>
             </div>
             <div class="result-content">
-                <div class="data-section">
-                    <h4 class="data-title">PO Header Data</h4>
-                    <div class="data-display" id="dataDisplay">
-                        <!-- Data would be populated here -->
+                {% if result.status == 'success' %}
+                    <div class="data-section">
+                        <h4 class="data-title">PO Header Data</h4>
+                        <div class="data-display">{{ result.po_header | pprint }}</div>
                     </div>
-                </div>
+                {% else %}
+                    <div class="error-message">
+                        <strong>Message:</strong> {{ result.message }}
+                    </div>
+                {% endif %}
             </div>
         </div>
-
-        <!-- Error result template -->
-        <div class="result-container" id="errorContainer" style="display: none;">
-            <div class="result-header">
-                <h3 class="result-title">Results for PO: <span id="errorPoNumber"></span></h3>
-                <div class="status-badge status-error">
-                    ❌ Error
-                </div>
-            </div>
-            <div class="result-content">
-                <div class="error-message" id="errorMessage">
-                    <!-- Error message would be populated here -->
-                </div>
-            </div>
-        </div>
+        {% endif %}
     </main>
 
     <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('show');
-        }
-
-        function showLoading() {
-            const loading = document.getElementById('loading');
-            const resultContainer = document.getElementById('resultContainer');
-            const errorContainer = document.getElementById('errorContainer');
-            
-            loading.classList.add('show');
-            resultContainer.style.display = 'none';
-            errorContainer.style.display = 'none';
-        }
-
-        // Demo function to simulate successful lookup
-        function simulateSuccess() {
-            const poNumber = document.getElementById('po_number').value || 'PO-2025-001234';
-            const loading = document.getElementById('loading');
-            const resultContainer = document.getElementById('resultContainer');
-            
-            setTimeout(() => {
-                loading.classList.remove('show');
-                resultContainer.style.display = 'block';
-                
-                document.getElementById('poNumber').textContent = poNumber;
-                document.getElementById('dataDisplay').textContent = `{
-    "po_number": "${poNumber}",
-    "vendor": "ABC Supplies Inc.",
-    "status": "APPROVED",
-    "total_amount": "$15,250.00",
-    "created_date": "2025-01-15",
-    "approved_by": "John Smith",
-    "items": [
-        {
-            "item_code": "ITM-001",
-            "description": "Office Supplies",
-            "quantity": 50,
-            "unit_price": "$25.00"
-        },
-        {
-            "item_code": "ITM-002", 
-            "description": "Computer Equipment",
-            "quantity": 5,
-            "unit_price": "$2,500.00"
-        }
-    ],
-    "delivery_date": "2025-01-25",
-    "payment_terms": "Net 30"
-}`;
-            }, 1500);
-        }
-
-        // Demo function to simulate error
-        function simulateError() {
-            const poNumber = document.getElementById('po_number').value || 'PO-INVALID';
-            const loading = document.getElementById('loading');
-            const errorContainer = document.getElementById('errorContainer');
-            
-            setTimeout(() => {
-                loading.classList.remove('show');
-                errorContainer.style.display = 'block';
-                
-                document.getElementById('errorPoNumber').textContent = poNumber;
-                document.getElementById('errorMessage').textContent = `PO Number "${poNumber}" not found in the system. Please verify the PO number and try again.`;
-            }, 1500);
-        }
-
-        // For demo purposes - randomly show success or error
-        document.getElementById('poForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Prevent actual form submission for demo
-            showLoading();
-            
-            // Simulate random success/error for demo
-            if (Math.random() > 0.3) {
-                simulateSuccess();
-            } else {
-                simulateError();
-            }
-        });
-
-        // Navigation active state
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('.nav-link.active').classList.remove('active');
-                this.classList.add('active');
-            });
-        });
-
-        // Auto-hide mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            const sidebar = document.getElementById('sidebar');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (!sidebar.contains(e.target) && !menuBtn.contains(e.target)) {
-                sidebar.classList.remove('show');
-            }
+        // Show loading when form is submitted
+        document.getElementById('poForm').addEventListener('submit', function() {
+            document.getElementById('loading').classList.add('show');
         });
     </script>
-</body>
-</html>
+
+{% endblock %}

@@ -71,3 +71,618 @@ INFO 2025-09-25 14:28:10,635 __init__ 940482 140337031014208 Default Auth client
 INFO 2025-09-25 14:36:41,955 autoreload 940482 140337031014208 /WebApplication/OCI_Agents_App/agents/views.py changed, reloading.
 INFO 2025-09-25 14:36:42,213 autoreload 940734 139940208506688 Watching for file changes with StatReloader
 INFO 2025-09-25 14:36:42,335 __init__ 940734 139940208506688 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:13:08,960 autoreload 27696 23168 Watching for file changes with StatReloader
+INFO 2025-09-25 20:13:09,378 __init__ 27696 23168 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:13:22,328 autoreload 27696 23168 D:\Astute\Web Application\Agents-\agents\views.py changed, reloading.
+INFO 2025-09-25 20:13:23,455 autoreload 24064 31012 Watching for file changes with StatReloader
+INFO 2025-09-25 20:13:24,358 __init__ 24064 31012 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:13:34,500 autoreload 24064 31012 D:\Astute\Web Application\Agents-\agents\views.py changed, reloading.
+INFO 2025-09-25 20:13:35,633 autoreload 31824 31888 Watching for file changes with StatReloader
+INFO 2025-09-25 20:13:36,100 __init__ 31824 31888 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:13:45,676 autoreload 31824 31888 D:\Astute\Web Application\Agents-\agents\views.py changed, reloading.
+INFO 2025-09-25 20:13:46,429 autoreload 34300 33544 Watching for file changes with StatReloader
+INFO 2025-09-25 20:13:46,789 __init__ 34300 33544 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:13:55,028 autoreload 34300 33544 D:\Astute\Web Application\Agents-\agents\views.py changed, reloading.
+INFO 2025-09-25 20:13:55,927 autoreload 30136 32092 Watching for file changes with StatReloader
+INFO 2025-09-25 20:13:57,124 autoreload 30136 32092 D:\Astute\Web Application\Agents-\agents\views.py changed, reloading.
+INFO 2025-09-25 20:13:57,876 autoreload 32316 32604 Watching for file changes with StatReloader
+INFO 2025-09-25 20:13:58,259 __init__ 32316 32604 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:14:09,740 autoreload 32316 32604 D:\Astute\Web Application\Agents-\agents\urls.py changed, reloading.
+INFO 2025-09-25 20:14:10,612 autoreload 25028 36244 Watching for file changes with StatReloader
+INFO 2025-09-25 20:14:11,201 __init__ 25028 36244 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:14:14,401 autoreload 25028 36244 D:\Astute\Web Application\Agents-\agents\urls.py changed, reloading.
+INFO 2025-09-25 20:14:15,366 autoreload 34840 34424 Watching for file changes with StatReloader
+INFO 2025-09-25 20:14:15,849 __init__ 34840 34424 Default Auth client Circuit breaker strategy enabled
+WARNING 2025-09-25 20:14:20,341 log 34840 37444 Not Found: /favicon.ico
+INFO 2025-09-25 20:14:56,015 autoreload 34840 34424 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:14:56,955 autoreload 40092 36916 Watching for file changes with StatReloader
+INFO 2025-09-25 20:14:57,384 __init__ 40092 36916 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:15:58,222 autoreload 42560 42956 Watching for file changes with StatReloader
+INFO 2025-09-25 20:15:58,876 __init__ 42560 42956 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:16:06,888 autoreload 42560 42956 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:16:07,827 autoreload 36436 37636 Watching for file changes with StatReloader
+INFO 2025-09-25 20:16:08,184 __init__ 36436 37636 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:16:13,714 autoreload 36436 37636 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:16:14,714 autoreload 41696 42788 Watching for file changes with StatReloader
+INFO 2025-09-25 20:16:15,097 __init__ 41696 42788 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:16:26,114 autoreload 41696 42788 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:16:26,934 autoreload 43128 40384 Watching for file changes with StatReloader
+INFO 2025-09-25 20:16:27,306 __init__ 43128 40384 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:16:48,536 autoreload 43128 40384 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:16:50,576 autoreload 38844 35672 Watching for file changes with StatReloader
+INFO 2025-09-25 20:16:50,973 __init__ 38844 35672 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:17:12,114 autoreload 38844 35672 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:17:12,920 autoreload 49716 49224 Watching for file changes with StatReloader
+INFO 2025-09-25 20:17:13,282 __init__ 49716 49224 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:17:25,061 autoreload 49716 49224 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:17:25,928 autoreload 49004 42568 Watching for file changes with StatReloader
+INFO 2025-09-25 20:17:26,281 __init__ 49004 42568 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:17:41,633 autoreload 49004 42568 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:17:42,457 autoreload 20724 18656 Watching for file changes with StatReloader
+INFO 2025-09-25 20:17:42,833 __init__ 20724 18656 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:18:01,813 autoreload 20724 18656 D:\Astute\Web Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-25 20:18:02,765 autoreload 4296 46952 Watching for file changes with StatReloader
+INFO 2025-09-25 20:18:03,150 __init__ 4296 46952 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:19:37,939 autoreload 1540 19836 Watching for file changes with StatReloader
+INFO 2025-09-25 20:19:38,660 __init__ 1540 19836 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 20:33:50,656 autoreload 14916 49932 Watching for file changes with StatReloader
+INFO 2025-09-25 20:33:51,188 __init__ 14916 49932 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-25 20:34:45,097 config 14916 8844 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:34:45,102 services 14916 8844 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:35:16,638 config 14916 22900 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:35:16,638 services 14916 22900 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:35:21,083 config 14916 18228 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:35:21,083 services 14916 18228 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:35:48,385 config 14916 37880 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:35:48,385 services 14916 37880 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:35:55,903 config 14916 37880 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:35:55,903 services 14916 37880 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:35:57,809 config 14916 37880 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:35:57,809 services 14916 37880 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:36:15,204 config 14916 37880 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:36:15,204 services 14916 37880 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:36:36,619 config 14916 27472 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:36:36,619 services 14916 27472 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:36:38,574 config 14916 27472 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:36:38,574 services 14916 27472 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:37:05,828 config 14916 36352 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:37:05,828 services 14916 36352 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:37:52,821 config 14916 17584 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:37:52,821 services 14916 17584 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:37:54,447 config 14916 17584 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:37:54,447 services 14916 17584 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+INFO 2025-09-25 20:37:58,018 autoreload 29164 33996 Watching for file changes with StatReloader
+INFO 2025-09-25 20:37:58,481 __init__ 29164 33996 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-25 20:38:01,059 config 29164 30464 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:38:01,059 services 29164 30464 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:38:02,427 config 29164 30464 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:38:02,427 services 29164 30464 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:38:36,514 config 29164 4912 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:38:36,514 services 29164 4912 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:38:38,165 config 29164 4912 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:38:38,165 services 29164 4912 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:38:53,574 config 29164 31760 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:38:53,574 services 29164 31760 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:39:19,221 config 29164 28576 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:39:19,221 services 29164 28576 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:39:21,195 config 29164 28576 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:39:21,195 services 29164 28576 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:39:22,623 config 29164 28576 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:39:22,623 services 29164 28576 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+INFO 2025-09-25 20:39:26,898 autoreload 33440 46788 Watching for file changes with StatReloader
+INFO 2025-09-25 20:39:27,241 __init__ 33440 46788 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-25 20:40:08,710 config 33440 23824 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:40:08,710 services 33440 23824 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:40:10,908 config 33440 23824 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:40:10,908 services 33440 23824 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:40:24,978 config 33440 39492 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:40:24,978 services 33440 39492 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:40:53,260 config 33440 35544 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:40:53,260 services 33440 35544 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:40:58,532 config 33440 8068 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:40:58,532 services 33440 8068 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:41:40,132 config 33440 42264 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:41:40,132 services 33440 42264 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:41:53,313 config 33440 37452 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:41:53,313 services 33440 37452 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:44:24,356 config 33440 6744 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:44:24,356 services 33440 6744 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:45:00,780 config 33440 40452 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:45:00,784 services 33440 40452 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:45:26,067 config 33440 46160 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:45:26,067 services 33440 46160 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:45:27,939 config 33440 46160 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:45:27,939 services 33440 46160 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:45:35,510 config 33440 20596 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:45:35,510 services 33440 20596 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:45:50,157 config 33440 44944 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:45:50,157 services 33440 44944 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:46:03,373 config 33440 13452 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:46:03,373 services 33440 13452 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:46:12,319 config 33440 13452 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:46:12,319 services 33440 13452 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:46:48,816 config 33440 23660 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:46:48,816 services 33440 23660 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
+DEBUG 2025-09-25 20:48:25,132 config 33440 23656 Config file found at C:\Users\Lenovo\.oci\config
+ERROR 2025-09-25 20:48:25,132 services 33440 23656 Failed to initialize or run the OCI agent.
+Traceback (most recent call last):
+  File "D:\Astute\Web Application\Agents-\agents\services.py", line 64, in run_po_agent
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\agent_client.py", line 109, in __init__
+    config=self.auth.get_config(),
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\addons\adk\auth\oci\user_principal.py", line 45, in get_config
+    config = oci.config.from_file(self.config_path, self.profile)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\venv\Lib\site-packages\oci\config.py", line 107, in from_file
+    raise ConfigFileNotFound("Could not find config file at {}, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm".format(expanded_file_location))
+oci.exceptions.ConfigFileNotFound: Could not find config file at C:\Users\Lenovo\.oci\config, please follow the instructions in the link to setup the config file https://docs.cloud.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm
