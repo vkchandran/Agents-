@@ -27,3 +27,47 @@ INFO 2025-09-24 17:43:37,363 autoreload 890121 140388667529024 Watching for file
 INFO 2025-09-24 17:43:37,478 __init__ 890121 140388667529024 Default Auth client Circuit breaker strategy enabled
 INFO 2025-09-24 17:58:43,621 autoreload 891176 139865807066944 Watching for file changes with StatReloader
 INFO 2025-09-24 17:58:43,742 __init__ 891176 139865807066944 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 11:20:05,024 autoreload 932615 139642897057600 Watching for file changes with StatReloader
+INFO 2025-09-25 11:20:05,146 __init__ 932615 139642897057600 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 11:20:49,500 autoreload 932644 139717495375680 Watching for file changes with StatReloader
+INFO 2025-09-25 11:20:49,615 __init__ 932644 139717495375680 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 13:33:20,087 autoreload 938271 139695846258496 Watching for file changes with StatReloader
+INFO 2025-09-25 13:33:20,205 __init__ 938271 139695846258496 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 13:47:43,385 autoreload 938393 140190389614400 Watching for file changes with StatReloader
+INFO 2025-09-25 13:47:43,500 __init__ 938393 140190389614400 Default Auth client Circuit breaker strategy enabled
+ERROR 2025-09-25 13:50:15,777 log 938393 140190004803136 Invalid HTTP_HOST header: '132.226.74.116:6000'. You may need to add '132.226.74.116' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '132.226.74.116:6000'. You may need to add '132.226.74.116' to ALLOWED_HOSTS.
+INFO 2025-09-25 14:25:31,465 autoreload 939700 140634893715264 Watching for file changes with StatReloader
+INFO 2025-09-25 14:25:31,585 __init__ 939700 140634893715264 Default Auth client Circuit breaker strategy enabled
+ERROR 2025-09-25 14:26:33,859 log 939700 140634507703872 Invalid HTTP_HOST header: '132.226.74.116:6000'. You may need to add '132.226.74.116' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/utils/deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/Agents/env_agents/lib/python3.11/site-packages/django/http/request.py", line 202, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '132.226.74.116:6000'. You may need to add '132.226.74.116' to ALLOWED_HOSTS.
+INFO 2025-09-25 14:28:10,211 autoreload 939700 140634893715264 /WebApplication/OCI_Agents_App/OCI_Agents_App/settings.py changed, reloading.
+INFO 2025-09-25 14:28:10,494 autoreload 940482 140337031014208 Watching for file changes with StatReloader
+INFO 2025-09-25 14:28:10,635 __init__ 940482 140337031014208 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-25 14:36:41,955 autoreload 940482 140337031014208 /WebApplication/OCI_Agents_App/agents/views.py changed, reloading.
+INFO 2025-09-25 14:36:42,213 autoreload 940734 139940208506688 Watching for file changes with StatReloader
+INFO 2025-09-25 14:36:42,335 __init__ 940734 139940208506688 Default Auth client Circuit breaker strategy enabled

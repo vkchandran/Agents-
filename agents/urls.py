@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import GetPOAgentView
+from .views import HomeVIew,GetPOAgentView
 
 urlpatterns = [
-    path('',GetPOAgentView, name='agent_Getpo'),
+    path('',HomeViewas_view(),name='home'),
+    path('getpo-agent',GetPOAgentView, name='getpo_agent'),
         ]

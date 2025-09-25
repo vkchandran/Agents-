@@ -15,7 +15,7 @@
         </div>
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#dashboard" class="nav-link active">Dashboard</a>
+		    <a href="{% url 'home' %}" class="nav-link active">Dashboard</a>
             </li>
             <li class="nav-item">
                 <a href="#agents" class="nav-link">All Agents</a>
@@ -36,11 +36,11 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-title">Total Agents</div>
-                <div class="stat-value">0</div>
+                <div class="stat-value">1</div>
             </div>
             <div class="stat-card">
                 <div class="stat-title">Active Agents</div>
-                <div class="stat-value">0</div>
+                <div class="stat-value">1</div>
             </div>
            
         </div>
@@ -90,7 +90,7 @@
                             <div class="agent-info">
                                 <div class="agent-avatar">PO</div>
                                 <div class="agent-details">
-                                    <h4><a href="" style="text-decoration: none;">GetPODetails</a></h4>
+					<h4><a href="{% url 'getpo_agent' %}" style="text-decoration: none;">GetPODetails</a></h4>
                                     <p>ID: AG001</p>
                                 </div>
                             </div>

@@ -2,6 +2,11 @@
 
 from django.shortcuts import render
 from . import services # Import our new services file
+from django.views.generic import Templateview
+
+
+class HomeView(TemplateView):
+    template_name = 'home.html'
 
 def GetPOAgentView(request):
     context = {}
