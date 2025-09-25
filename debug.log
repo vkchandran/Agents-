@@ -2521,3 +2521,5 @@ DEBUG 2025-09-26 00:33:33,248 services 38552 27576 Raw response text: {"ABS_PO":
 }
 INFO 2025-09-26 00:33:33,248 services 38552 27576 Successfully found and processed PO_ID 0000000452
 DEBUG 2025-09-26 00:33:40,158 connectionpool 38552 27576 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqap4a6tgyncm5vzy3qlostzmyei2qasp6awtz7ibwjfsza/actions/chat HTTP/1.1" 200 649
+INFO 2025-09-26 00:52:25,652 autoreload 33220 13600 Watching for file changes with StatReloader
+INFO 2025-09-26 00:52:26,529 __init__ 33220 13600 Default Auth client Circuit breaker strategy enabled
