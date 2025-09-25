@@ -23,37 +23,7 @@
             z-index: 1000;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .logo-icon {
-            width: 100px;
-            height: 100px;
          
-            position: relative;
-        }
-
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            top: 6px;
-            left: -8px;
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 12px solid #64748b;
-        }
-
-        .logo h1 {
-            font-size: 1.3rem;
-            font-weight: 600;
-        }
 
         .nav-menu {
             list-style: none;
