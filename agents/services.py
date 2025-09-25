@@ -4,7 +4,7 @@ import logging
 import json
 import requests
 from datetime import datetime
-
+import asyncio
 # Import Django settings to get our configuration
 from django.conf import settings
 from oci.addons.adk import tool, AgentClient, Agent
@@ -56,15 +56,17 @@ def get_po_details(po_number: str) -> dict:
         logger.exception(f"An unexpected error occurred while fetching PO_ID {po_number}")
         return {"status": "error", "message": str(e)}
 
+
 def run_po_agent(po_number: str) -> dict:
     """
     Initializes and runs the OCI agent to get PO details.
     """
+    # This outer try/except catches initialization errors
     try:
         client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
         agent = Agent(
             client=client,
-            agent_endpoint_id=settings.AGENT_ENDPOINT_ID, # Get Endpoint from settings
+            agent_endpoint_id=settings.AGENT_ENDPOINT_ID,
             instructions=(
                 "You are a Purchase Order assistant. "
                 "When the user provides a PO number, always call the 'get_po_details' tool "
@@ -73,20 +75,27 @@ def run_po_agent(po_number: str) -> dict:
             tools=[get_po_details]
         )
         
-        # In a web app, we call the agent directly, not through a general input prompt
-        response = agent.run(f"Get details for PO number {po_number}")
+        logger.info(f"Running PO agent for: {po_number}")
+
+        # 1. Create and set the event loop for the current thread.
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+        try:
+            response = agent.run(f"Get details for PO number {po_number}")
+            # FIX: Use the correct method to get the agent's text response
+            agent_content = response.final_output
+            
+            # Return a clean JSON object for the frontend
+            return {"status": "success", "message": agent_content}
         
-        # The agent's response might contain text and tool calls.
-        # We are interested in the output of the tool call.
-        tool_outputs = [call.output for call in response.tool_calls if call.output]
+        except Exception as e:
+            logger.error(f"Agent execution failed: {e}", exc_info=True)
+            return {"status": "error", "message": f"Agent call failed: {str(e)}"}
         
-        if tool_outputs:
-            # Assuming the first tool output is what we need
-            return tool_outputs[0]
-        else:
-            # If the tool wasn't called for some reason, return the text response
-            return {"status": "error", "message": response.text}
+        finally:
+            loop.close()
 
     except Exception as e:
-        logger.exception("Failed to initialize or run the OCI agent.")
-        return {"status": "error", "message": f"Agent execution failed: {str(e)}"}
+        logger.exception("Failed to initialize the OCI agent.")
+        return {"status": "error", "message": f"Agent initialization failed: {str(e)}"}

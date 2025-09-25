@@ -54,8 +54,8 @@
             <div class="result-content">
                 {% if result.status == 'success' %}
                     <div class="data-section">
-                        <h4 class="data-title">PO Header Data</h4>
-                        <div class="data-display">{{ result.po_header | pprint }}</div>
+                        <h4 class="data-title">Agent Summary</h4>
+                        <div class="data-display" style="white-space: pre-wrap;">{{ result.message }}</div>
                     </div>
                 {% else %}
                     <div class="error-message">
