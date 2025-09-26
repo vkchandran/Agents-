@@ -156,7 +156,7 @@ AGENT_ENDPOINT_ID = {
     "Email_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia",
     "GetPO_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqap4a6tgyncm5vzy3qlostzmyei2qasp6awtz7ibwjfsza",
     "GetVendor_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqaa6osswbg3cue7qn2q5cdsdvoj5xfg54oaff7ct57zxiq",
-    "ALERTSUMMARY_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia"
+    "ALERTSUMMARY_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqa5vzy7fwqehojzfycooefdink3rkujcryc4fzym4n6fja"
 }
 
 PEOPLESOFT_API_URL = {
