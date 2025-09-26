@@ -22,16 +22,6 @@ GENAI_MODEL_ID = "ocid1.generativeaimodel.oc1.us-chicago-1.amaaaaaask7dceya2xryd
 MAX_PAGES_ALLOWED = 5
 PROCESSED_EMAILS_FILE = '/ASTUTE_AP/processed_emails.txt'
 MAIL_INTERVAL_DAYS = 5
-SFTP_HOST = "209.129.192.128"
-SFTP_PORT = 22
-SFTP_USERNAME = "sftp_astute"
-SFTP_PASSWORD = "S#bQ215(lm!Q324(o"
-SFTP_PATH = "/AstuteUAT"
-ERROR_RECIPEINT_MAIL = ['apandita@beastute.com','testing.application.ar@gmail.com', 'jiyash@beastute.com']
-ALERT_RECIPEINT_MAIL = ['apandita@beastute.com']
-
-
 
 BUCKET_ALERT_INTERVAL_IN_MINS = 10
-
 OCI_BUCKET_RECEIPTS = 'UATNewInvoices'
