@@ -267,3 +267,237 @@ INFO 2025-09-26 22:59:55,878 agent_services 22708 2492 Connected to email server
 INFO 2025-09-26 23:00:00,762 agent_services 22708 2492 Logged out from email server.
 INFO 2025-09-26 23:00:00,762 agent_services 22708 2492 Email alert summary completed successfully.
 DEBUG 2025-09-26 23:00:07,283 connectionpool 22708 2492 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 723
+INFO 2025-09-26 23:31:36,249 autoreload 19836 26180 Watching for file changes with StatReloader
+INFO 2025-09-26 23:31:36,419 __init__ 19836 26180 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-26 23:32:18,634 config 19836 22592 Config file found at ~\.oci\config
+INFO 2025-09-26 23:32:18,670 agent_services 19836 22592 Running Alert Summary agent
+DEBUG 2025-09-26 23:32:18,670 proactor_events 19836 22592 Using proactor: IocpProactor
+DEBUG 2025-09-26 23:32:18,677 connectionpool 19836 22592 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-26 23:32:21,147 connectionpool 19836 22592 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 226
+DEBUG 2025-09-26 23:32:22,344 connectionpool 19836 22592 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 619
+ERROR 2025-09-26 23:32:23,151 agent_services 19836 22592 Failed to connect to email server: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+DEBUG 2025-09-26 23:32:26,708 connectionpool 19836 22592 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 588
+INFO 2025-09-26 23:33:47,589 autoreload 20096 14284 Watching for file changes with StatReloader
+INFO 2025-09-26 23:33:47,780 __init__ 20096 14284 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-26 23:33:51,442 config 20096 1308 Config file found at ~\.oci\config
+INFO 2025-09-26 23:33:51,490 agent_services 20096 1308 Running Alert Summary agent
+DEBUG 2025-09-26 23:33:51,490 proactor_events 20096 1308 Using proactor: IocpProactor
+DEBUG 2025-09-26 23:33:51,490 connectionpool 20096 1308 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-26 23:33:53,659 connectionpool 20096 1308 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 229
+DEBUG 2025-09-26 23:33:56,310 connectionpool 20096 1308 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 623
+INFO 2025-09-26 23:33:58,881 agent_services 20096 1308 Connected to email server and selected inbox.
+INFO 2025-09-26 23:34:03,434 agent_services 20096 1308 Logged out from email server.
+INFO 2025-09-26 23:34:03,434 agent_services 20096 1308 Email alert summary completed successfully.
+DEBUG 2025-09-26 23:34:14,228 connectionpool 20096 1308 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 722
+INFO 2025-09-26 23:55:19,910 autoreload 20096 14284 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-26 23:55:20,472 autoreload 22616 15196 Watching for file changes with StatReloader
+INFO 2025-09-26 23:55:20,668 __init__ 22616 15196 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-26 23:55:30,896 autoreload 22616 15196 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-26 23:55:31,385 autoreload 10980 24732 Watching for file changes with StatReloader
+INFO 2025-09-26 23:55:31,574 __init__ 10980 24732 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-26 23:55:43,727 autoreload 10980 24732 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-26 23:55:44,254 autoreload 22788 15072 Watching for file changes with StatReloader
+INFO 2025-09-26 23:55:44,459 __init__ 22788 15072 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-26 23:55:52,495 autoreload 22788 15072 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-26 23:55:53,043 autoreload 9104 28088 Watching for file changes with StatReloader
+INFO 2025-09-26 23:55:53,229 __init__ 9104 28088 Default Auth client Circuit breaker strategy enabled
+INFO 2025-09-26 23:57:05,616 autoreload 9104 28088 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-26 23:57:06,181 autoreload 27908 27396 Watching for file changes with StatReloader
+INFO 2025-09-26 23:57:06,383 __init__ 27908 27396 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-26 23:57:06,626 config 27908 27396 Config file found at 
+DEBUG 2025-09-26 23:57:06,628 config 27908 11268 Config file found at 
+INFO 2025-09-26 23:57:23,289 autoreload 27908 27396 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:11:15,498 autoreload 18024 25492 Watching for file changes with StatReloader
+INFO 2025-09-27 00:11:15,716 __init__ 18024 25492 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:11:15,988 config 18024 25492 Config file found at .oci\config
+DEBUG 2025-09-27 00:11:15,990 config 18024 20316 Config file found at .oci\config
+INFO 2025-09-27 00:11:31,046 autoreload 18024 25492 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:11:31,484 autoreload 25120 17600 Watching for file changes with StatReloader
+INFO 2025-09-27 00:11:31,667 __init__ 25120 17600 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:11:31,946 config 25120 17600 Config file found at D.oci\config
+DEBUG 2025-09-27 00:11:31,949 config 25120 15856 Config file found at D.oci\config
+INFO 2025-09-27 00:11:33,429 autoreload 25120 17600 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:11:33,871 autoreload 27052 4028 Watching for file changes with StatReloader
+INFO 2025-09-27 00:11:34,039 __init__ 27052 4028 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:11:34,254 config 27052 4028 Config file found at D:\.oci\config
+DEBUG 2025-09-27 00:11:34,254 config 27052 30228 Config file found at D:\.oci\config
+INFO 2025-09-27 00:11:38,859 autoreload 27052 4028 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:11:39,313 autoreload 29384 24392 Watching for file changes with StatReloader
+INFO 2025-09-27 00:11:39,505 __init__ 29384 24392 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:11:39,749 config 29384 24392 Config file found at D:\Users.oci\config
+DEBUG 2025-09-27 00:11:39,765 config 29384 26792 Config file found at D:\Users.oci\config
+INFO 2025-09-27 00:11:42,282 autoreload 29384 24392 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:11:42,744 autoreload 18364 30392 Watching for file changes with StatReloader
+INFO 2025-09-27 00:11:42,950 __init__ 18364 30392 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:11:43,200 config 18364 30392 Config file found at D:\Users\arunc\.oci\config
+DEBUG 2025-09-27 00:11:43,206 config 18364 17568 Config file found at D:\Users\arunc\.oci\config
+INFO 2025-09-27 00:11:54,108 autoreload 18364 30392 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:12:02,446 autoreload 3076 13564 Watching for file changes with StatReloader
+INFO 2025-09-27 00:12:02,614 __init__ 3076 13564 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:12:02,838 config 3076 13564 Config file found at C:\Users\arunc\.oci\config
+DEBUG 2025-09-27 00:12:02,870 connectionpool 3076 13564 Starting new HTTPS connection (1): objectstorage.us-phoenix-1.oraclecloud.com:443
+DEBUG 2025-09-27 00:12:04,141 connectionpool 3076 13564 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "GET /n HTTP/1.1" 200 14
+DEBUG 2025-09-27 00:12:12,064 config 3076 29352 Config file found at ~\.oci\config
+INFO 2025-09-27 00:12:12,300 agent_services 3076 29352 Running Email agent
+DEBUG 2025-09-27 00:12:12,300 proactor_events 3076 29352 Using proactor: IocpProactor
+DEBUG 2025-09-27 00:12:12,314 connectionpool 3076 29352 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-27 00:12:13,669 connectionpool 3076 29352 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 227
+DEBUG 2025-09-27 00:12:15,146 connectionpool 3076 29352 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 640
+DEBUG 2025-09-27 00:12:17,500 connectionpool 3076 29352 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 400 112
+DEBUG 2025-09-27 00:12:17,500 circuit_breaker 3076 29352 Is transient error status code:400 error code:400
+DEBUG 2025-09-27 00:12:17,500 circuit_breaker 3076 29352 status code:400 not in failure_statuses_and_codes:{409: ['IncorrectState'], 429: [], 500: [], 502: [], 503: [], 504: []}
+ERROR 2025-09-27 00:12:18,154 agent_services 3076 29352 Agent execution failed: Failed to invoke chat endpoint: {'target_service': 'generative_ai_agent_runtime', 'status': 400, 'code': '400', 'opc-request-id': 'D4717A6A4F7A47D6B81FC29E6E7FC001/B857C1D86316E03D476024D4BA201BC3/6C1669043AC80615122CE4261FEFC3A4', 'message': 'Awaiting response for required action(s), cannot proceed to chat', 'operation_name': 'chat', 'timestamp': '2025-09-26T18:42:17.500861+00:00', 'client_version': 'Oracle-PythonSDK/2.159.0', 'request_endpoint': 'POST https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com/20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat', 'logging_tips': 'To get more info on the failing request, refer to https://docs.oracle.com/en-us/iaas/tools/python/latest/logging.html for ways to log the request/response details.', 'troubleshooting_tips': "See https://docs.oracle.com/iaas/Content/API/References/apierrors.htm#apierrors_400__400_400 for more information about resolving this error. Also see https://docs.oracle.com/iaas/api/#/en/generative-ai-agents-client/20240531/AgentEndpoint/Chat for details on this operation's requirements. If you are unable to resolve this generative_ai_agent_runtime issue, please contact Oracle support and provide them this full error message."}
+Traceback (most recent call last):
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\addons\adk\agent_client.py", line 770, in _invoke
+    response = method(**kwargs)
+               ^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\generative_ai_agent_runtime\generative_ai_agent_runtime_client.py", line 235, in chat
+    return retry_strategy.make_retrying_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\retry\retry.py", line 308, in make_retrying_call
+    response = func_ref(*func_args, **func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\base_client.py", line 548, in call_api
+    response = self.request(request, allow_control_chars, operation_name, api_reference_link)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\circuitbreaker.py", line 146, in wrapper
+    return self.call(function, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\circuitbreaker.py", line 188, in call
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\base_client.py", line 740, in request
+    self.raise_service_error(request, response, service_code, message, operation_name, api_reference_link, target_service, request_endpoint, client_version, timestamp, deserialized_data)
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\base_client.py", line 905, in raise_service_error
+    raise exceptions.ServiceError(
+oci.exceptions.ServiceError: {'target_service': 'generative_ai_agent_runtime', 'status': 400, 'code': '400', 'opc-request-id': 'D4717A6A4F7A47D6B81FC29E6E7FC001/B857C1D86316E03D476024D4BA201BC3/6C1669043AC80615122CE4261FEFC3A4', 'message': 'Awaiting response for required action(s), cannot proceed to chat', 'operation_name': 'chat', 'timestamp': '2025-09-26T18:42:17.500861+00:00', 'client_version': 'Oracle-PythonSDK/2.159.0', 'request_endpoint': 'POST https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com/20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat', 'logging_tips': 'To get more info on the failing request, refer to https://docs.oracle.com/en-us/iaas/tools/python/latest/logging.html for ways to log the request/response details.', 'troubleshooting_tips': "See https://docs.oracle.com/iaas/Content/API/References/apierrors.htm#apierrors_400__400_400 for more information about resolving this error. Also see https://docs.oracle.com/iaas/api/#/en/generative-ai-agents-client/20240531/AgentEndpoint/Chat for details on this operation's requirements. If you are unable to resolve this generative_ai_agent_runtime issue, please contact Oracle support and provide them this full error message."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Astute\Agent Application\Agents-\agents\agent_services.py", line 158, in run_Email_agent
+    response = agent.run("process and check last one day emails and summarize")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\addons\adk\agent.py", line 183, in run
+    return loop.run_until_complete(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\addons\adk\agent.py", line 272, in run_async
+    response = self._handle_chat(
+               ^^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\addons\adk\agent.py", line 490, in _handle_chat
+    response = self.client.chat(
+               ^^^^^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\addons\adk\agent_client.py", line 232, in chat
+    chat_response: Response = self._invoke(
+                              ^^^^^^^^^^^^^
+  File "D:\Astute\Agent Application\env\Lib\site-packages\oci\addons\adk\agent_client.py", line 788, in _invoke
+    raise AgentError(
+oci.addons.adk.agent_error.AgentError: Failed to invoke chat endpoint: {'target_service': 'generative_ai_agent_runtime', 'status': 400, 'code': '400', 'opc-request-id': 'D4717A6A4F7A47D6B81FC29E6E7FC001/B857C1D86316E03D476024D4BA201BC3/6C1669043AC80615122CE4261FEFC3A4', 'message': 'Awaiting response for required action(s), cannot proceed to chat', 'operation_name': 'chat', 'timestamp': '2025-09-26T18:42:17.500861+00:00', 'client_version': 'Oracle-PythonSDK/2.159.0', 'request_endpoint': 'POST https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com/20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat', 'logging_tips': 'To get more info on the failing request, refer to https://docs.oracle.com/en-us/iaas/tools/python/latest/logging.html for ways to log the request/response details.', 'troubleshooting_tips': "See https://docs.oracle.com/iaas/Content/API/References/apierrors.htm#apierrors_400__400_400 for more information about resolving this error. Also see https://docs.oracle.com/iaas/api/#/en/generative-ai-agents-client/20240531/AgentEndpoint/Chat for details on this operation's requirements. If you are unable to resolve this generative_ai_agent_runtime issue, please contact Oracle support and provide them this full error message."}
+INFO 2025-09-27 00:18:32,975 autoreload 3076 13564 D:\Astute\Agent Application\Agents-\OCI_Agents_App\settings.py changed, reloading.
+INFO 2025-09-27 00:18:33,563 autoreload 25320 10984 Watching for file changes with StatReloader
+INFO 2025-09-27 00:18:33,754 __init__ 25320 10984 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:18:34,032 config 25320 10984 Config file found at C:\Users\arunc\.oci\config
+DEBUG 2025-09-27 00:18:34,070 connectionpool 25320 10984 Starting new HTTPS connection (1): objectstorage.us-phoenix-1.oraclecloud.com:443
+DEBUG 2025-09-27 00:18:35,131 connectionpool 25320 10984 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "GET /n HTTP/1.1" 200 14
+DEBUG 2025-09-27 00:24:46,448 config 25320 3956 Config file found at ~\.oci\config
+INFO 2025-09-27 00:24:46,481 agent_services 25320 3956 Running Email agent
+DEBUG 2025-09-27 00:24:46,481 proactor_events 25320 3956 Using proactor: IocpProactor
+DEBUG 2025-09-27 00:24:46,487 connectionpool 25320 3956 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-27 00:24:47,646 connectionpool 25320 3956 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 228
+DEBUG 2025-09-27 00:24:49,024 connectionpool 25320 3956 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 638
+INFO 2025-09-27 00:24:51,325 agent_services 25320 3956 Connected to email server and selected inbox.
+INFO 2025-09-27 00:24:51,325 agent_services 25320 3956 Starting invoice scan...
+DEBUG 2025-09-27 00:24:56,908 connectionpool 25320 3956 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 497
+INFO 2025-09-27 00:33:11,957 autoreload 25320 10984 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-27 00:33:12,617 autoreload 1108 26348 Watching for file changes with StatReloader
+INFO 2025-09-27 00:33:12,831 __init__ 1108 26348 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:33:13,089 config 1108 26348 Config file found at C:\Users\arunc\.oci\config
+DEBUG 2025-09-27 00:33:13,121 connectionpool 1108 26348 Starting new HTTPS connection (1): objectstorage.us-phoenix-1.oraclecloud.com:443
+DEBUG 2025-09-27 00:33:14,220 connectionpool 1108 26348 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "GET /n HTTP/1.1" 200 14
+DEBUG 2025-09-27 00:36:42,714 config 1108 29780 Config file found at ~\.oci\config
+INFO 2025-09-27 00:36:42,896 agent_services 1108 29780 Running Email agent
+DEBUG 2025-09-27 00:36:42,896 proactor_events 1108 29780 Using proactor: IocpProactor
+DEBUG 2025-09-27 00:36:42,902 connectionpool 1108 29780 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-27 00:36:44,270 connectionpool 1108 29780 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 229
+DEBUG 2025-09-27 00:36:45,492 connectionpool 1108 29780 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 637
+INFO 2025-09-27 00:36:47,817 agent_services 1108 29780 Connected to email server and selected inbox.
+INFO 2025-09-27 00:36:47,817 agent_services 1108 29780 Starting invoice scan...
+ERROR 2025-09-27 00:36:51,678 agent_services 1108 29780 Invoice check error: name 'make_header' is not defined
+DEBUG 2025-09-27 00:36:55,103 connectionpool 1108 29780 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 554
+INFO 2025-09-27 00:38:36,291 autoreload 1108 26348 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-27 00:38:36,881 autoreload 18740 21276 Watching for file changes with StatReloader
+INFO 2025-09-27 00:38:37,073 __init__ 18740 21276 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:38:37,327 config 18740 21276 Config file found at C:\Users\arunc\.oci\config
+DEBUG 2025-09-27 00:38:37,373 connectionpool 18740 21276 Starting new HTTPS connection (1): objectstorage.us-phoenix-1.oraclecloud.com:443
+DEBUG 2025-09-27 00:38:38,457 connectionpool 18740 21276 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "GET /n HTTP/1.1" 200 14
+INFO 2025-09-27 00:40:06,599 autoreload 18740 21276 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-27 00:40:07,128 autoreload 24060 22764 Watching for file changes with StatReloader
+INFO 2025-09-27 00:40:07,329 __init__ 24060 22764 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 00:40:07,569 config 24060 22764 Config file found at C:\Users\arunc\.oci\config
+DEBUG 2025-09-27 00:40:07,600 connectionpool 24060 22764 Starting new HTTPS connection (1): objectstorage.us-phoenix-1.oraclecloud.com:443
+DEBUG 2025-09-27 00:40:08,672 connectionpool 24060 22764 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "GET /n HTTP/1.1" 200 14
+DEBUG 2025-09-27 00:40:10,028 config 24060 21560 Config file found at ~\.oci\config
+INFO 2025-09-27 00:40:10,065 agent_services 24060 21560 Running Email agent
+DEBUG 2025-09-27 00:40:10,065 proactor_events 24060 21560 Using proactor: IocpProactor
+DEBUG 2025-09-27 00:40:10,065 connectionpool 24060 21560 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-27 00:40:11,218 connectionpool 24060 21560 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 228
+DEBUG 2025-09-27 00:40:12,438 connectionpool 24060 21560 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 638
+INFO 2025-09-27 00:40:14,843 agent_services 24060 21560 Connected to email server and selected inbox.
+INFO 2025-09-27 00:40:14,843 agent_services 24060 21560 Starting invoice scan...
+DEBUG 2025-09-27 00:40:19,126 connectionpool 24060 21560 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 544
+DEBUG 2025-09-27 00:41:23,238 config 24060 21560 Config file found at ~\.oci\config
+INFO 2025-09-27 00:41:23,423 agent_services 24060 21560 Running Email agent
+DEBUG 2025-09-27 00:41:23,423 proactor_events 24060 21560 Using proactor: IocpProactor
+DEBUG 2025-09-27 00:41:23,429 connectionpool 24060 21560 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-27 00:41:24,579 connectionpool 24060 21560 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 227
+DEBUG 2025-09-27 00:41:25,753 connectionpool 24060 21560 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 635
+INFO 2025-09-27 00:41:27,438 agent_services 24060 21560 Connected to email server and selected inbox.
+INFO 2025-09-27 00:41:27,438 agent_services 24060 21560 Starting invoice scan...
+INFO 2025-09-27 00:41:28,400 base_client 24060 21560  2025-09-26 19:11:28.400757: Request: PUT https://objectstorage.us-phoenix-1.oraclecloud.com/n/axmzurahjoxo/b/UATNewInvoices2/o/888_midton.pdf
+DEBUG 2025-09-27 00:41:28,416 connectionpool 24060 21560 Resetting dropped connection: objectstorage.us-phoenix-1.oraclecloud.com
+DEBUG 2025-09-27 00:41:29,482 connectionpool 24060 21560 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "PUT /n/axmzurahjoxo/b/UATNewInvoices2/o/888_midton.pdf HTTP/1.1" 404 165
+DEBUG 2025-09-27 00:41:29,482 base_client 24060 21560  2025-09-26 19:11:29.482952: time elapsed for request 21E197319EB3490FAD0E0F8C23BD2F75: 1.0834113999990223
+DEBUG 2025-09-27 00:41:29,482 base_client 24060 21560  2025-09-26 19:11:29.482952: Response status: 404
+DEBUG 2025-09-27 00:41:29,482 base_client 24060 21560  2025-09-26 19:11:29.482952: python SDK time elapsed for deserializing: 1.2500000593718141e-05
+DEBUG 2025-09-27 00:41:29,482 circuit_breaker 24060 21560 Is transient error status code:404 error code:BucketNotFound
+DEBUG 2025-09-27 00:41:29,482 circuit_breaker 24060 21560 status code:404 not in failure_statuses_and_codes:{409: ['IncorrectState'], 429: [], 500: [], 502: [], 503: [], 504: []}
+ERROR 2025-09-27 00:41:29,498 agent_services 24060 21560 Upload failed for '888_midton.pdf': {'target_service': 'object_storage', 'status': 404, 'code': 'BucketNotFound', 'opc-request-id': 'phx-1:XucFYSUZzbW2KwDGyQ2bxAnJ8QobzGJtmNwm7pf2MP7t14XyMz_ubOMVavrpNWAO', 'message': "Either the bucket named 'UATNewInvoices2' does not exist in the namespace 'axmzurahjoxo' or you are not authorized to access it", 'operation_name': 'put_object', 'timestamp': '2025-09-26T19:11:29.482952+00:00', 'client_version': 'Oracle-PythonSDK/2.159.0', 'request_endpoint': 'PUT https://objectstorage.us-phoenix-1.oraclecloud.com/n/axmzurahjoxo/b/UATNewInvoices2/o/888_midton.pdf', 'logging_tips': 'To get more info on the failing request, refer to https://docs.oracle.com/en-us/iaas/tools/python/latest/logging.html for ways to log the request/response details.', 'troubleshooting_tips': "See https://docs.oracle.com/iaas/Content/API/References/apierrors.htm#apierrors_404__404_bucketnotfound for more information about resolving this error. Also see https://docs.oracle.com/iaas/api/#/en/objectstorage/20160918/Object/PutObject for details on this operation's requirements. If you are unable to resolve this object_storage issue, please contact Oracle support and provide them this full error message."}
+DEBUG 2025-09-27 00:41:29,498 agent_services 24060 21560 Inserting payload: {'FROM_EMAIL': 'Arun Chandran <kchandran@beastute.com>', 'TO_EMAIL': 'kchandran@beastute.com', 'SUBJECT_LINE': 'Re: ', 'ATTACHMENT_NAMES': '888_midton.pdf', 'ODU_DOC_ID': '0', 'PROCESSED': 'N', 'L_UID': '888'}
+DEBUG 2025-09-27 00:41:29,498 connectionpool 24060 21560 Starting new HTTPS connection (1): g597b0eee403a73-peraltadb.adb.us-phoenix-1.oraclecloudapps.com:443
+DEBUG 2025-09-27 00:41:30,593 connectionpool 24060 21560 https://g597b0eee403a73-peraltadb.adb.us-phoenix-1.oraclecloudapps.com:443 "POST /ords/peralta/odu/insert_email_details HTTP/11" 200 None
+INFO 2025-09-27 00:41:30,593 agent_services 24060 21560 Inserted email UID 888 with attachment 'midton.pdf'
+DEBUG 2025-09-27 00:41:46,861 connectionpool 24060 21560 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 624
+DEBUG 2025-09-27 01:03:27,600 config 24060 10536 Config file found at ~\.oci\config
+INFO 2025-09-27 01:03:27,844 agent_services 24060 10536 Running Email agent
+DEBUG 2025-09-27 01:03:27,844 proactor_events 24060 10536 Using proactor: IocpProactor
+DEBUG 2025-09-27 01:03:27,857 connectionpool 24060 10536 Starting new HTTPS connection (1): agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443
+DEBUG 2025-09-27 01:03:29,114 connectionpool 24060 10536 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/sessions HTTP/1.1" 200 227
+DEBUG 2025-09-27 01:03:30,346 connectionpool 24060 10536 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 635
+INFO 2025-09-27 01:03:32,661 agent_services 24060 10536 Connected to email server and selected inbox.
+INFO 2025-09-27 01:03:32,661 agent_services 24060 10536 Starting invoice scan...
+INFO 2025-09-27 01:03:33,767 base_client 24060 10536  2025-09-26 19:33:33.766624: Request: PUT https://objectstorage.us-phoenix-1.oraclecloud.com/n/axmzurahjoxo/b/UATNewInvoices2/o/889_Hotel_BIll2.pdf
+DEBUG 2025-09-27 01:03:33,770 connectionpool 24060 10536 Resetting dropped connection: objectstorage.us-phoenix-1.oraclecloud.com
+DEBUG 2025-09-27 01:03:34,814 connectionpool 24060 10536 https://objectstorage.us-phoenix-1.oraclecloud.com:443 "PUT /n/axmzurahjoxo/b/UATNewInvoices2/o/889_Hotel_BIll2.pdf HTTP/1.1" 404 165
+DEBUG 2025-09-27 01:03:34,814 base_client 24060 10536  2025-09-26 19:33:34.814389: time elapsed for request 8625347E9D2446308C4E7F2239189E12: 1.051060800000414
+DEBUG 2025-09-27 01:03:34,814 base_client 24060 10536  2025-09-26 19:33:34.814389: Response status: 404
+DEBUG 2025-09-27 01:03:34,814 base_client 24060 10536  2025-09-26 19:33:34.814389: python SDK time elapsed for deserializing: 1.0700001439545304e-05
+DEBUG 2025-09-27 01:03:34,814 circuit_breaker 24060 10536 Is transient error status code:404 error code:BucketNotFound
+DEBUG 2025-09-27 01:03:34,814 circuit_breaker 24060 10536 status code:404 not in failure_statuses_and_codes:{409: ['IncorrectState'], 429: [], 500: [], 502: [], 503: [], 504: []}
+ERROR 2025-09-27 01:03:34,814 agent_services 24060 10536 Upload failed for '889_Hotel_BIll2.pdf': {'target_service': 'object_storage', 'status': 404, 'code': 'BucketNotFound', 'opc-request-id': 'phx-1:t-W0HDNwp8dEW2ElyyTNx1NaFOQCIL928nkmjpUA0PIXWd2CXqW0xXfs9SbEIyc-', 'message': "Either the bucket named 'UATNewInvoices2' does not exist in the namespace 'axmzurahjoxo' or you are not authorized to access it", 'operation_name': 'put_object', 'timestamp': '2025-09-26T19:33:34.814389+00:00', 'client_version': 'Oracle-PythonSDK/2.159.0', 'request_endpoint': 'PUT https://objectstorage.us-phoenix-1.oraclecloud.com/n/axmzurahjoxo/b/UATNewInvoices2/o/889_Hotel_BIll2.pdf', 'logging_tips': 'To get more info on the failing request, refer to https://docs.oracle.com/en-us/iaas/tools/python/latest/logging.html for ways to log the request/response details.', 'troubleshooting_tips': "See https://docs.oracle.com/iaas/Content/API/References/apierrors.htm#apierrors_404__404_bucketnotfound for more information about resolving this error. Also see https://docs.oracle.com/iaas/api/#/en/objectstorage/20160918/Object/PutObject for details on this operation's requirements. If you are unable to resolve this object_storage issue, please contact Oracle support and provide them this full error message."}
+DEBUG 2025-09-27 01:03:34,814 agent_services 24060 10536 Inserting payload: {'FROM_EMAIL': 'Arun Chandran <kchandran@beastute.com>', 'TO_EMAIL': 'kchandran@beastute.com', 'SUBJECT_LINE': 'Re: ', 'ATTACHMENT_NAMES': '889_Hotel_BIll2.pdf', 'ODU_DOC_ID': '0', 'PROCESSED': 'N', 'L_UID': '889'}
+DEBUG 2025-09-27 01:03:34,814 connectionpool 24060 10536 Starting new HTTPS connection (1): g597b0eee403a73-peraltadb.adb.us-phoenix-1.oraclecloudapps.com:443
+DEBUG 2025-09-27 01:03:35,738 connectionpool 24060 10536 https://g597b0eee403a73-peraltadb.adb.us-phoenix-1.oraclecloudapps.com:443 "POST /ords/peralta/odu/insert_email_details HTTP/11" 200 None
+INFO 2025-09-27 01:03:35,738 agent_services 24060 10536 Inserted email UID 889 with attachment 'Hotel_BIll2.pdf'
+DEBUG 2025-09-27 01:03:40,842 connectionpool 24060 10536 https://agent-runtime.generativeai.us-chicago-1.oci.oraclecloud.com:443 "POST /20240531/agentEndpoints/ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia/actions/chat HTTP/1.1" 200 612
+INFO 2025-09-27 01:07:46,438 autoreload 24060 22764 D:\Astute\Agent Application\Agents-\agents\agent_services.py changed, reloading.
+INFO 2025-09-27 01:07:47,006 autoreload 2732 18956 Watching for file changes with StatReloader
+INFO 2025-09-27 01:07:47,203 __init__ 2732 18956 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 01:07:47,479 config 2732 18956 Config file found at /home/opc/root/.oci/config
+DEBUG 2025-09-27 01:07:47,482 config 2732 24712 Config file found at /home/opc/root/.oci/config
+INFO 2025-09-27 01:07:58,239 autoreload 24864 3096 Watching for file changes with StatReloader
+INFO 2025-09-27 01:07:58,394 __init__ 24864 3096 Default Auth client Circuit breaker strategy enabled
+DEBUG 2025-09-27 01:07:58,634 config 24864 3096 Config file found at /home/opc/root/.oci/config
+DEBUG 2025-09-27 01:07:58,634 config 24864 23672 Config file found at /home/opc/root/.oci/config

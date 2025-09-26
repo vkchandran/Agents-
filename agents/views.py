@@ -40,3 +40,13 @@ def AlertSummaryAgentView(request):
         # context['prompt'] = prompt
     return render(request, 'alertsummary_agent.html', context)
 
+def EmailAgentView(request):
+    context = {}
+    if request.method == 'POST':
+        
+        # Call our service function to run the agent
+        result = agent_services.run_Email_agent()
+        context['result'] = result
+        # context['prompt'] = prompt
+    return render(request, 'email_agent.html', context)
+

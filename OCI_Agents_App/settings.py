@@ -153,6 +153,7 @@ LOGGING = {
 
 
 AGENT_ENDPOINT_ID = {
+    "Email_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia",
     "GetPO_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqap4a6tgyncm5vzy3qlostzmyei2qasp6awtz7ibwjfsza",
     "GetVendor_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqaa6osswbg3cue7qn2q5cdsdvoj5xfg54oaff7ct57zxiq",
     "ALERTSUMMARY_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqabsv23bu5nmjvnwyj5nziiqpxatbte7t5pszklskv2eia"
@@ -164,14 +165,13 @@ PEOPLESOFT_API_URL = {
 }
 
 
-
+OCI_CONFIG = "C:\\Users\\arunc\\.oci\\config"
+OCI_BUCKET_NAME = "UATNewInvoices2"
 
 import environ 
+env = environ.Env()
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 SMTP_HOST = env('SMTP_HOST')
 SMTP_USER = env('SMTP_USER')

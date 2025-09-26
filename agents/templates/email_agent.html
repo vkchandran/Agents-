@@ -1,0 +1,58 @@
+{% extends 'home.html' %}
+{% block home %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/agents.css' %}">
+
+    <main class="main-contents">
+        <div class="lookup-container">
+            <div class="form-section">
+                <h3 class="form-title">Email Agent</h3>
+                <form method="post"  id="Form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary mt-2">
+                        🔍 Fetch invoices....
+                    </button>
+                </form>
+            </div>
+
+            <div class="loading" id="loading">
+                <p>🔄 Searching for invoices...</p>
+            </div>
+        </div>
+
+        {% if result %}
+        <div class="result-container">
+            <div class="result-header">
+                <h3 class="result-title">Results : {{ prompt }}</h3>
+                <div class="status-badge {% if result.status == 'success' %}status-success{% else %}status-error{% endif %}">
+                    {% if result.status == 'success' %}
+                        ✅ Success
+                    {% else %}
+                        ❌ Error
+                    {% endif %}
+                </div>
+            </div>
+            <div class="result-content">
+                {% if result.status == 'success' %}
+                    <div class="data-section">
+                        <h4 class="data-title">Agent Summary</h4>
+                        <div class="data-display" style="white-space: pre-wrap;">{{ result.message }}</div>
+                    </div>
+                {% else %}
+                    <div class="error-message">
+                        <strong>Message:</strong> {{ result.message }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </main>
+
+    <script>
+        // Show loading when form is submitted
+        document.getElementById('Form').addEventListener('submit', function() {
+            document.getElementById('loading').classList.add('show');
+        });
+    </script>
+
+{% endblock %}

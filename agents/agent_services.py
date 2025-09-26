@@ -1,3 +1,5 @@
+import os
+import re
 import logging
 import json
 import requests
@@ -6,11 +8,192 @@ import asyncio
 from django.conf import settings
 from oci.addons.adk import tool, AgentClient, Agent
 import imaplib, email
-from datetime import datetime
+from datetime import datetime,timedelta
 from email import policy
 from django.http import JsonResponse
+import oci
+from email.header import decode_header, make_header
+from . import config_STAGE as l_env
 
 logger = logging.getLogger(__name__)
+DAYS_INTERVAL = int(os.getenv("DAYS_INTERVAL", "1"))
+
+# OCI setup
+oci_config = oci.config.from_file(l_env.OCI_CONFIG)
+object_storage = oci.object_storage.ObjectStorageClient(oci_config)
+namespace = object_storage.get_namespace().data
+bucket_name = settings.OCI_BUCKET_NAME
+
+# ============  EmailAgent ======================
+
+class EmailData:
+    def __init__(self, from_email, to_email, subject, attachment_name, odu_doc_id="0", l_uid="0"):
+        self.FROM_EMAIL = from_email
+        self.TO_EMAIL = to_email
+        self.SUBJECT_LINE = subject
+        self.ATTACHMENT_NAMES = attachment_name
+        self.ODU_DOC_ID = odu_doc_id
+        self.PROCESSED = 'N'
+        self.L_UID = l_uid
+
+    def insert(self):
+        payload = {
+            "FROM_EMAIL": self.FROM_EMAIL,
+            "TO_EMAIL": self.TO_EMAIL,
+            "SUBJECT_LINE": self.SUBJECT_LINE,
+            "ATTACHMENT_NAMES": self.ATTACHMENT_NAMES,
+            "ODU_DOC_ID": self.ODU_DOC_ID,
+            "PROCESSED": self.PROCESSED,
+            "L_UID": self.L_UID
+        }
+        try:
+            logging.debug(f"Inserting payload: {payload}")
+            response = requests.post(l_env.APEX_API_URL_EMAIL, json=payload)
+            response.raise_for_status()
+            return True
+        except requests.exceptions.RequestException as e:
+            logging.error(f"Failed to insert email details for UID {self.L_UID}: {e}")
+            return False
+
+def sanitize_filename(uid, original_name):
+    name, ext = os.path.splitext(f"{uid}_{original_name}")
+    name = re.sub(r'[^a-zA-Z0-9]+', '_', name).strip('_')[:54]
+    return f"{name}{ext}"
+
+def upload_to_oci_object_storage(object_name, file_data):
+    try:
+        object_storage.put_object(namespace, bucket_name, object_name, file_data)
+        logging.info(f"Uploaded '{object_name}' to bucket '{bucket_name}'")
+    except Exception as e:
+        logging.error(f"Upload failed for '{object_name}': {e}")
+
+@tool(description="Connects to email server, scans inbox for unseen invoice emails, and uploads attachments to OCI Object Storage.")
+def process_from_email():
+    global mail
+    # CHANGED: Added a list to store details of each processed invoice.
+    summary = {
+        "processed_emails": 0,
+        "processed_attachments": 0,
+        "errors": 0,
+        "processed_invoices": []
+    }
+    try:
+        mail = imaplib.IMAP4_SSL(settings.SMTP_HOST)
+        mail.login(settings.SMTP_USER, settings.SMTP_PASSWORD)
+        mail.select('inbox')
+        logging.info("Connected to email server and selected inbox.")
+    except Exception as e:
+        logging.error(f"Email server connection failed: {e}")
+        return {"error": str(e)}
+
+    logging.info("Starting invoice scan...")
+
+    try:
+        since_date = (datetime.now() - timedelta(days=DAYS_INTERVAL)).strftime("%d-%b-%Y")
+        result, data = mail.search(None, f'(UNSEEN SINCE "{since_date}")')
+
+        if result != 'OK':
+            logging.error("Email search failed.")
+            return {"error": "Email search failed"}
+
+        for num in data[0].split():
+            email_uid = num.decode()
+            result, data = mail.fetch(num, '(RFC822)')
+            if result == 'OK':
+                msg = email.message_from_bytes(data[0][1])
+                # Decode headers to handle special characters
+                email_from = str(make_header(decode_header(msg.get('From'))))
+                email_subject = str(make_header(decode_header(msg.get('Subject'))))
+
+                summary["processed_emails"] += 1
+
+                for part in msg.walk():
+                    if part.get_content_maintype() == 'multipart' or part.get('Content-Disposition') is None:
+                        continue
+                    
+                    file_name = part.get_filename()
+                    if not file_name:
+                        continue
+                    
+                    # Decode filename
+                    decoded_filename = str(make_header(decode_header(file_name)))
+
+                    summary["processed_attachments"] += 1
+
+                    unique_file_name = sanitize_filename(email_uid, decoded_filename)
+                    file_data = part.get_payload(decode=True)
+                    upload_to_oci_object_storage(unique_file_name, file_data)
+
+                    # CHANGED: Capture the details of the processed invoice.
+                    invoice_details = {
+                        "from": email_from,
+                        "subject": email_subject,
+                        "filename": decoded_filename
+                    }
+                    summary["processed_invoices"].append(invoice_details)
+
+                    email_record = EmailData(email_from, settings.SMTP_USER, email_subject, unique_file_name, l_uid=email_uid)
+                    if email_record.insert():
+                        logging.info(f"Inserted email UID {email_uid} with attachment '{decoded_filename}'")
+                    else:
+                        summary["errors"] += 1
+            else:
+                summary["errors"] += 1
+
+    except Exception as e:
+        summary["errors"] += 1
+        logging.error(f"Invoice check error: {e}")
+
+    # CHANGED: Return the detailed list along with the summary counts.
+    return {
+        "message": "Email processing completed",
+        "processed_emails": summary["processed_emails"],
+        "attachments_uploaded": summary["processed_attachments"],
+        "errors": summary["errors"],
+        "invoices": summary["processed_invoices"] # <-- This is the new detailed list
+    }
+
+def run_Email_agent():
+    """
+    Initializes and runs the OCI agent to get Vendor details.
+    """
+    # This outer try/except catches initialization errors
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+    agent = Agent(
+        client=client,
+        agent_endpoint_id=settings.AGENT_ENDPOINT_ID.get("Email_AGENT_ENDPOINT_ID"),
+        instructions="You process invoice emails and extract relevant data using tools.",
+        tools=[process_from_email]
+    )
+
+       
+    try:
+        logger.info(f"Running Email agent")
+
+        # 1. Create and set the event loop for the current thread.
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+        try:
+            
+            response = agent.run("process and check last one day emails and summarize")
+            # FIX: Use the correct method to get the agent's text response
+            agent_content = response.final_output
+        
+            # Return a clean JSON object for the frontend
+            return {"status": "success", "message": agent_content}
+        
+        except Exception as e:
+            logger.error(f"Agent execution failed: {e}", exc_info=True)
+            return {"status": "error", "message": f"Agent call failed: {str(e)}"}
+        
+        finally:
+            loop.close()
+
+    except Exception as e:
+        logger.exception("Failed to initialize the OCI agent.")
+        return {"status": "error", "message": f"Agent initialization failed: {str(e)}"}
+    
 
 # ============ AlertSummaryAgent =============================
 
