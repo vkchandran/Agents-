@@ -1,0 +1,70 @@
+{% extends 'home.html' %}
+{% block home %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/agents.css' %}">
+
+    <main class="main-contents">
+        <div class="lookup-container">
+            <div class="form-section">
+                <h3 class="form-title">Get Vendor Details</h3>
+                <form method="post" action="{% url 'getvendor_agent' %}" id="vendorForm">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <!-- <label for="po_number" class="form-label">Enter PO Number:</label> -->
+                        <input 
+                            type="text" 
+                            id="vendor_id" 
+                            name="vendor_id" 
+                            class="form-input"
+                            
+                            placeholder="Enter Vendor ID"
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">
+                        🔍 Fetch Details
+                    </button>
+                </form>
+            </div>
+
+            <div class="loading" id="loading">
+                <p>🔄 Searching for Vendor details...</p>
+            </div>
+        </div>
+
+        {% if result %}
+        <div class="result-container">
+            <div class="result-header">
+                <h3 class="result-title">Results for PO: {{ submitted_vendor }}</h3>
+                <div class="status-badge {% if result.status == 'success' %}status-success{% else %}status-error{% endif %}">
+                    {% if result.status == 'success' %}
+                        ✅ Success
+                    {% else %}
+                        ❌ Error
+                    {% endif %}
+                </div>
+            </div>
+            <div class="result-content">
+                {% if result.status == 'success' %}
+                    <div class="data-section">
+                        <h4 class="data-title">Agent Summary</h4>
+                        <div class="data-display" style="white-space: pre-wrap;">{{ result.message }}</div>
+                    </div>
+                {% else %}
+                    <div class="error-message">
+                        <strong>Message:</strong> {{ result.message }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </main>
+
+    <script>
+        // Show loading when form is submitted
+        document.getElementById('vendorForm').addEventListener('submit', function() {
+            document.getElementById('loading').classList.add('show');
+        });
+    </script>
+
+{% endblock %}

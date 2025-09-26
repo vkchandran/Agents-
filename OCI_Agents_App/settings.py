@@ -123,15 +123,17 @@ STATIC_URL = 'static/'           # where media files are stored
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AGENT_ENDPOINT_ID = os.getenv(
-    "OCI_AGENT_ENDPOINT_ID",
-    "ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqap4a6tgyncm5vzy3qlostzmyei2qasp6awtz7ibwjfsza"
-)
+AUTH_USER_MODEL = 'agents.CustomUser'
 
-PEOPLESOFT_API_URL = os.getenv(
-    "PEOPLESOFT_API_URL",
-    "https://fscm.beastute.com/PSIGW/RESTListeningConnector/PSFT_EP/ABS_PO_SYNC.v1/getPO"
-)
+AGENT_ENDPOINT_ID = {
+    "GetPO_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqap4a6tgyncm5vzy3qlostzmyei2qasp6awtz7ibwjfsza",
+    "GetVendor_AGENT_ENDPOINT_ID":"ocid1.genaiagentendpoint.oc1.us-chicago-1.amaaaaaakjeknfqaa6osswbg3cue7qn2q5cdsdvoj5xfg54oaff7ct57zxiq"
+}
+
+PEOPLESOFT_API_URL = {
+    "GET_PO_PEOPLESOFT_API_URL":"https://fscm.beastute.com/PSIGW/RESTListeningConnector/PSFT_EP/ABS_PO_SYNC.v1/getPO",
+    "GET_VENDOR_PEOPLESOFT_API_URL":"https://fscm.beastute.com/PSIGW/RESTListeningConnector/PSFT_EP/ABS_SUP_SYNC.v1/getSuppliers"
+}
 
 # --- Logging Configuration ---
 # Django's logging is more robust than basicConfig for web apps.

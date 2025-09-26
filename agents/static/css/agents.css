@@ -17,22 +17,7 @@
             min-height: 80vh;
         }
 
-        .header {
-            background: white;
-            padding: 1rem 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            margin-bottom: 2rem;
-        }
-
-        .header h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #1e293b;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+        
 
         .breadcrumb {
             font-size: 0.875rem;

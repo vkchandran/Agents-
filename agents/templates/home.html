@@ -11,29 +11,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
-    .logo {
-           display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            background-color: white;
-            padding: 1rem 1.5rem;
-            margin: 10px;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 2px #f5f5dc;
-        }
+         .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white; /* Sets the header background to white */
+    padding: 1rem 1.5rem;
+}
 
-        .logo h2 {
-            font-size: 1.7rem;
-            font-weight:bolder;
-            color: #1e293b;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background: linear-gradient(135deg, #2DD4BF 0%, #1e293b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 0.5px;
-            
-        }
+.logo h2 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #1e293b; /* Sets a solid color for the text */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0; /* Optional: Removes default margin for better alignment */
+}
+
 </style>
 </head>
 <body>
@@ -121,6 +115,20 @@
                                 <div class="agent-details">
 					<h4><a href="{% url 'getpo_agent' %}" style="text-decoration: none;">GetPODetails</a></h4>
                                     <p>ID: AG001</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Reactive</td>
+                        <td>Payables</td>
+                       <td><span class="status-badge status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="agent-info">
+                                <div class="agent-avatar">VD</div>
+                                <div class="agent-details">
+					<h4><a href="{% url 'getvendor_agent' %}" style="text-decoration: none;">GetVendorDetails</a></h4>
+                                    <p>ID: AG002</p>
                                 </div>
                             </div>
                         </td>
