@@ -31,8 +31,6 @@ ERROR_RECIPEINT_MAIL = ['apandita@beastute.com','testing.application.ar@gmail.co
 ALERT_RECIPEINT_MAIL = ['apandita@beastute.com']
 
 
-OPENAI_API_KEY = "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"
-#OPENAI_API_KEY = "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"
 
 BUCKET_ALERT_INTERVAL_IN_MINS = 10
 
