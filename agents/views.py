@@ -38,5 +38,5 @@ def AlertSummaryAgentView(request):
         result = agent_services.run_alertsummary_agent()
         context['result'] = result
         # context['prompt'] = prompt
-    return render(request, 'Alertsummary_agent.html', context)
+    return render(request, 'alertsummary_agent.html', context)
 
