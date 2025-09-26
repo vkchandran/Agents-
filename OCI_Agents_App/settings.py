@@ -164,18 +164,12 @@ PEOPLESOFT_API_URL = {
 }
 
 
+SMTP_HOST = 'imap.gmail.com'
+SMTP_USER = 'kchandran@beastute.com'
+SMTP_PASSWORD="nlbl frmj mxpa clnk"
+SMTP_MAIL_SERVER = "smtp.gmail.com"
+SMTP_MAIL_PORT = 587
 
 
-import environ 
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
 
-SMTP_HOST = env('SMTP_HOST')
-SMTP_USER = env('SMTP_USER')
-SMTP_PASSWORD = env('SMTP_PASSWORD')
-SMTP_MAIL_SERVER = env('SMTP_MAIL_SERVER')
-# Use env.int() to cast the port number to an integer
-SMTP_MAIL_PORT = env.int('SMTP_MAIL_PORT') 
