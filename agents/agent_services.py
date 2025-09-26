@@ -1,16 +1,154 @@
-# ai_agents/services.py
-
 import logging
 import json
 import requests
 from datetime import datetime
 import asyncio
-# Import Django settings to get our configuration
 from django.conf import settings
 from oci.addons.adk import tool, AgentClient, Agent
+import imaplib, email
+from datetime import datetime
+from email import policy
+from django.http import JsonResponse
 
-# Get the logger configured in settings.py
 logger = logging.getLogger(__name__)
+
+# ============ AlertSummaryAgent =============================
+
+ALERT_KEYWORDS = ['alert', 'notification', 'important', 'critical', 'warning']
+
+@tool(description="Reads today's emails, scans for alerts and notifications, and summarizes key information.")
+def summarize_daily_alerts():
+    """
+    Connects to an IMAP email server, fetches emails from the current day,
+    filters them based on keywords, and returns a formatted summary string.
+    """
+    summary = {
+        "total_emails": 0,
+        "alert_emails": 0,
+        "alerts": []
+    }
+
+    try:
+        mail = imaplib.IMAP4_SSL(settings.SMTP_HOST)
+        mail.login(settings.SMTP_USER, settings.SMTP_PASSWORD)
+        mail.select('inbox')
+        logger.info("Connected to email server and selected inbox.")
+    except Exception as e:
+        logger.error(f"Failed to connect to email server: {e}")
+        return f"I'm sorry, I was unable to connect to the email server. Please check the configuration. Error: {e}"
+
+    try:
+        # IMAP standard format for date is DD-Mon-YYYY
+        today_date = datetime.now().strftime("%d-%b-%Y")
+        result, data = mail.search(None, f'(SINCE "{today_date}")')
+
+        if result != 'OK':
+            logger.error("Email search failed.")
+            return "I'm sorry, I failed while trying to search the inbox."
+
+        email_ids = data[0].split()
+        if not email_ids:
+            logger.info("No emails found for today.")
+            return "I checked the inbox but found no new emails for today."
+
+        for num in email_ids:
+            summary["total_emails"] += 1
+            result, msg_data = mail.fetch(num, '(RFC822)')
+
+            if result != 'OK':
+                logger.warning(f"Failed to fetch email with ID {num}.")
+                continue
+
+            msg = email.message_from_bytes(msg_data[0][1], policy=policy.default)
+            subject = msg.get('Subject', '')
+            sender = msg.get('From', '')
+            body = ""
+
+            # Extract plain text body
+            if msg.is_multipart():
+                for part in msg.walk():
+                    if part.get_content_type() == "text/plain":
+                        body = part.get_payload(decode=True).decode('utf-8', errors='ignore')
+                        break
+            else:
+                if msg.get_content_type() == "text/plain":
+                    body = msg.get_payload(decode=True).decode('utf-8', errors='ignore')
+
+            full_text = f"{subject}\n{body}".lower()
+
+            # Check for alert keywords
+            if any(keyword in full_text for keyword in ALERT_KEYWORDS):
+                summary["alert_emails"] += 1
+                summary["alerts"].append({
+                    "from": sender,
+                    "subject": subject
+                })
+
+    except Exception as e:
+        logger.error(f"Failed during email processing: {e}")
+        # CHANGED: Return a user-friendly error string
+        return f"An unexpected error occurred while processing emails: {e}"
+
+    finally:
+        try:
+            mail.logout()
+            logger.info("Logged out from email server.")
+        except Exception as e:
+            logger.error(f"Failed to logout from email server: {e}")
+
+    # Build the final output string for the agent
+    alert_info = "\n".join([f"- From: {a['from']}, Subject: {a['subject']}" for a in summary["alerts"]])
+    message = (
+        f"📊 Daily Email Alert Summary:\n\n"
+        f"I scanned a total of {summary['total_emails']} emails today and found "
+        f"{summary['alert_emails']} that appear to be alerts or notifications.\n\n"
+        f"🔔 Here are the key alerts:\n{alert_info if alert_info else 'No specific alert emails were found.'}"
+    )
+    logger.info("Email alert summary completed successfully.")
+
+    # CHANGED: Return only the formatted string, not the dictionary
+    return message
+
+def run_alertsummary_agent():
+    """
+    Initializes and runs the OCI agent to get Vendor details.
+    """
+    # This outer try/except catches initialization errors
+    client = AgentClient(auth_type="api_key", profile="DEFAULT", region="us-chicago-1")
+    agent = Agent(
+        client=client,
+        agent_endpoint_id=settings.AGENT_ENDPOINT_ID.get("ALERTSUMMARY_AGENT_ENDPOINT_ID"),
+        instructions="You summarize alerts and notifications from emails...",
+        tools=[summarize_daily_alerts]
+    )
+       
+    try:
+        logger.info(f"Running Alert Summary agent")
+
+        # 1. Create and set the event loop for the current thread.
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
+        try:
+            
+            response = agent.run("give me today details")
+            # FIX: Use the correct method to get the agent's text response
+            agent_content = response.final_output
+        
+            # Return a clean JSON object for the frontend
+            return {"status": "success", "message": agent_content}
+        
+        except Exception as e:
+            logger.error(f"Agent execution failed: {e}", exc_info=True)
+            return {"status": "error", "message": f"Agent call failed: {str(e)}"}
+        
+        finally:
+            loop.close()
+
+    except Exception as e:
+        logger.exception("Failed to initialize the OCI agent.")
+        return {"status": "error", "message": f"Agent initialization failed: {str(e)}"}
+    
 
 # ============ GetPODetailsAgent =============================
 

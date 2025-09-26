@@ -59,11 +59,11 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-title">Total Agents</div>
-                <div class="stat-value">1</div>
+                <div class="stat-value">3</div>
             </div>
             <div class="stat-card">
                 <div class="stat-title">Active Agents</div>
-                <div class="stat-value">1</div>
+                <div class="stat-value">3</div>
             </div>
            
         </div>
@@ -113,7 +113,7 @@
                             <div class="agent-info">
                                 <div class="agent-avatar">PO</div>
                                 <div class="agent-details">
-					<h4><a href="{% url 'getpo_agent' %}" style="text-decoration: none;">GetPODetails</a></h4>
+					<h4><a href="{% url 'getpo_agent' %}" style="text-decoration: none;">GetPODetailsAgent</a></h4>
                                     <p>ID: AG001</p>
                                 </div>
                             </div>
@@ -127,8 +127,22 @@
                             <div class="agent-info">
                                 <div class="agent-avatar">VD</div>
                                 <div class="agent-details">
-					<h4><a href="{% url 'getvendor_agent' %}" style="text-decoration: none;">GetVendorDetails</a></h4>
+					            <h4><a href="{% url 'getvendor_agent' %}" style="text-decoration: none;">GetVendorDetailsAgent</a></h4>
                                     <p>ID: AG002</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>Reactive</td>
+                        <td>Payables</td>
+                       <td><span class="status-badge status-active">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="agent-info">
+                                <div class="agent-avatar">AS</div>
+                                <div class="agent-details">
+					<h4><a href="{% url 'alertsummary_agent' %}" style="text-decoration: none;">AlertSummaryAgent</a></h4>
+                                    <p>ID: AG003</p>
                                 </div>
                             </div>
                         </td>

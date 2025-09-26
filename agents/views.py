@@ -30,3 +30,13 @@ def GetVendorAgentView(request):
             context['submitted_vendor'] = vendor_id
     return render(request, 'getvendor_agent.html', context)
 
+def AlertSummaryAgentView(request):
+    context = {}
+    if request.method == 'POST':
+        
+        # Call our service function to run the agent
+        result = agent_services.run_alertsummary_agent()
+        context['result'] = result
+        # context['prompt'] = prompt
+    return render(request, 'Alertsummary_agent.html', context)
+
